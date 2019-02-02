@@ -11,10 +11,10 @@ public class App extends Application {
             @Override
             public void run() {
 
-                Intent intent=new Intent("com.example.session15.TEST");
-                intent.putExtra("message","hello broad cast receiver");
+                Intent intent = new Intent("com.example.session15.TEST");
+                intent.putExtra("message", "hello broad cast receiver");
                 LocalBroadcastManager.getInstance(App.this).sendBroadcast(intent);
             }
-        },5000);
+        }, 5000);
     }
 }
